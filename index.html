@@ -3,10 +3,10 @@
 <style>
 
 img.logo {
-  height: 20vh;
+  max-height: 20vh;
+  max-width: 100%;
+  height: auto;
   width: auto;
-  max-width: 100%
-  ali
 }
 
 </style>
@@ -18,7 +18,7 @@ img.logo {
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <center><img src="Logos_No_Background_Positive.jpg" class="logo"></center>
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 100vw; height: 100vh; background: #231F20"></canvas>
     <script src="Build/BuildWeb.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
