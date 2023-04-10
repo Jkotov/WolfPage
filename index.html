@@ -2,12 +2,25 @@
 
 <style>
 
-img.logo {
-  max-height: 20vh;
-  max-width: 100%;
-  height: auto;
+img.logo1 {
+  height: 50px;
   width: auto;
 }
+img.logo2 {
+  height: 50px;
+  width: auto;
+}
+
+img.logo3 {
+  height: 50px;
+  width: auto;
+}
+
+img.logo4 {
+  height: 50px;
+  width: auto;
+}
+
 
 </style>
 <html lang="en-us">
@@ -17,8 +30,9 @@ img.logo {
     <title>Unity WebGL Player | WolfRace</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <center><img src="Logos_No_Background_Positive.jpg" class="logo"></center>
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 100vw; height: 100vh; background: #231F20"></canvas>
+    <center><img src="Logos_No_Background_Positive.jpg" class="logo1"></center>
+    <center><img src="Logos_No_Background_Positive.jpg" class="logo2"></center>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
     <script src="Build/BuildWeb.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -30,7 +44,7 @@ img.logo {
 
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.width = "100%";
-        canvas.style.height = "80%";
+        canvas.style.height = "60%";
         canvas.style.position = "fixed";
 
         document.body.style.textAlign = "left";
@@ -48,5 +62,7 @@ img.logo {
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
+    <center><img src="Logos_No_Background_Positive.jpg" class="logo3"></center>
+    <center><img src="Logos_No_Background_Positive.jpg" class="logo4"></center>
   </body>
 </html>
