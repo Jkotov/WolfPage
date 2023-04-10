@@ -32,10 +32,10 @@ img.logo4 {
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <center><img src="Logos_No_Background_Positive.jpg" class="logo1"></center>
     <center><img src="Logos_No_Background_Positive.jpg" class="logo2"></center>
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="max-width: 90%; height: 50%; background: #231F20"></canvas>
+    <center><canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="max-width: 90%; height: 50%; background: #231F20"></canvas></center>
     <script src="Build/BuildWeb.loader.js"></script>
     <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      /*if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
         meta.name = 'viewport';
@@ -48,7 +48,7 @@ img.logo4 {
         canvas.style.position = "fixed";
 
         document.body.style.textAlign = "left";
-      }
+      }*/
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/BuildWeb.data",
