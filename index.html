@@ -32,9 +32,11 @@ img.logo4 {
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <center><img src="Logos_No_Background_Positive.jpg" class="logo1"></center>
     <center><img src="Logos_No_Background_Positive.jpg" class="logo2"></center>
-    <canvas id="unity-canvas" tabindex="-1" style="aspect-ratio: 960 / 600; width: 960px; background: #231F20;  max-width: 90vw; max-height: 70vh; " ></canvas>
+    <canvas id="unity-canvas" tabindex="-1" style="aspect-ratio: 960 / 600; width: 960px;  background: #231F20;  max-width: 90vw; max-height: 70vh; " ></canvas>
     <script src="Build/BuildWeb.loader.js"></script>
     <script>
+     
+
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/BuildWeb.data",
         frameworkUrl: "Build/BuildWeb.framework.js",
@@ -43,8 +45,8 @@ img.logo4 {
         companyName: "DefaultCompany",
         productName: "WolfRace",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
     <center><img src="Logos_No_Background_Positive.jpg" class="logo3"></center>
